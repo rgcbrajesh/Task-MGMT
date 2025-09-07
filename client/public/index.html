@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Task Management Mobile App - Manage tasks efficiently with role-based access control" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- PWA Meta Tags -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Task Manager">
+    
+    <!-- Preconnect to API -->
+    <link rel="preconnect" href="http://localhost:5000">
+    
+    <title>Task Management App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    
+    <!-- Firebase SDK -->
+    <script type="module">
+      import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js';
+      import { getMessaging } from 'https://www.gstatic.com/firebasejs/10.1.0/firebase-messaging.js';
+      
+      // Firebase configuration will be loaded from environment variables
+      window.firebaseConfig = {
+        // This will be populated by the React app
+      };
+    </script>
+  </body>
+</html>
